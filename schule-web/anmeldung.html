@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Anmeldung – Ernst-Reuter-Schule Karlsruhe</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/favico.png" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="top-bar">
+        <a href="mailto:poststelle@ernst-reuter-schule-ka.schule.bwl.de">📧 poststelle@ernst-reuter-schule-ka.schule.bwl.de</a>
+        <span>📞 0721 133-4656</span>
+      </div>
+
+      <header>
+        <a href="index.html" class="logo">
+          <img
+            src="assets/logo.png"
+            alt="Ernst-Reuter-Schule Karlsruhe Logo"
+            class="logo-img"
+          />
+          <span>Ernst-Reuter-Schule Karlsruhe</span>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="anmeldung.html">Anmeldung</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section" data-animate>
+          <div class="section-title">
+            <h2>Anmeldung an der ERS</h2>
+            <p>
+              Informationen für Eltern, die ihr Kind an der
+              Ernst-Reuter-Schule anmelden möchten.
+            </p>
+          </div>
+
+          <p>
+            Die Anmeldung an der Ernst-Reuter-Schule erfolgt in der Regel nach
+            dem Besuch der Grundschule. Wichtige Termine sind der Informations-
+            abend zur Gemeinschaftsschule, der Tag der offenen Tür sowie der
+            offizielle Anmeldezeitraum der Stadt Karlsruhe. Aktuelle Daten
+            werden über Mitteilungen und den offiziellen Schulauftritt
+            veröffentlicht.
+          </p>
+
+          <p>
+            Für eine Anmeldung benötigen Sie in der Praxis verschiedene
+            Unterlagen (z.&nbsp;B. Grundschulempfehlung, Anmeldeformulare der
+            Stadt, ggf. Nachweise zu Förderschwerpunkten).
+          </p>
+
+          <p>
+            Bei Fragen zur Anmeldung wenden Sie sich bitte an das Sekretariat
+            der Schule oder vereinbaren Sie einen Beratungstermin. Die Kontaktdaten
+            finden Sie auf der offiziellen Website der ERS.
+          </p>
+        </section>
+
+        <section class="section" data-animate>
+          <div class="section-title">
+            <h2 class="section-heading-center">Online-Anfrage senden</h2>
+          </div>
+
+          <form
+            class="admin-form"
+            onsubmit="event.preventDefault(); alert('Vielen Dank! Dieses Formular ist nur eine Demo für das Schulprojekt.');"
+          >
+            <label for="child-name">Name des Kindes</label>
+            <input
+              type="text"
+              id="child-name"
+              required
+              placeholder="Vor- und Nachname"
+            />
+
+            <label for="grade">Gewünschte Klassenstufe</label>
+            <input
+              type="text"
+              id="grade"
+              placeholder="z. B. Einstieg in Klasse 5"
+            />
+
+            <label for="parent-name">Erziehungsberechtigte*r</label>
+            <input
+              type="text"
+              id="parent-name"
+              placeholder="Name der Erziehungsberechtigten"
+            />
+
+            <label for="email">E-Mail-Adresse</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Kontakt-E-Mail"
+            />
+
+            <label for="message">Nachricht / Fragen</label>
+            <textarea
+              id="message"
+              placeholder="Kurze Nachricht oder Fragen zur Anmeldung..."
+            ></textarea>
+
+            <button type="submit" class="btn btn-primary">
+              Anfrage absenden
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <span>© 2025 Ernst-Reuter-Schule Karlsruhe</span>
+        <span>
+            <a href="impressum.html">Impressum</a>
+        </span>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

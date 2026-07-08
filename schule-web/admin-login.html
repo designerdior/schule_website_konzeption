@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin-Login – Ernst-Reuter-Schule Karlsruhe</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/favico-admin.png" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="top-bar">
+        <a href="mailto:poststelle@ernst-reuter-schule-ka.schule.bwl.de">📧 poststelle@ernst-reuter-schule-ka.schule.bwl.de</a>
+        <span>📞 0721 133-4656</span>
+      </div>
+
+      <header>
+        <a href="admin-login.html" class="logo">
+          <img
+            src="assets/logo-admin.png"
+            alt="Ernst-Reuter-Schule Karlsruhe Logo"
+            class="logo-img"
+          />
+          <span>Ernst-Reuter-Schule Karlsruhe - Admin</span>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="anmeldung.html">Anmeldung</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section" data-animate>
+          <div class="section-title">
+            <h2 class="section-heading-center">Admin-Login</h2>
+          </div>
+
+          <div class="login-box">
+            <form id="login-form">
+              <label for="username">Benutzername</label>
+              <input
+                id="username"
+                type="text"
+                autocomplete="username"
+                required
+                placeholder="Benutzername"
+              />
+
+              <label for="password">Passwort</label>
+              <input
+                id="password"
+                type="password"
+                autocomplete="current-password"
+                required
+                placeholder="Passwort"
+              />
+
+              <button type="submit" class="btn btn-primary" style="margin-top: 0.6rem;">
+                Anmelden
+              </button>
+
+              <div id="login-status" class="admin-status"></div>
+
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span>© 2025 Ernst-Reuter-Schule Karlsruhe</span>
+        <span>
+            <a href="impressum.html">Impressum</a>
+        </span>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

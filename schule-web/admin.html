@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin – Inhalte verwalten | Ernst-Reuter-Schule Karlsruhe</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+  </head>
+  <body>
+    <div class="page" id="admin-page">
+      <div class="top-bar">
+        <span>📧 poststelle@ernst-reuter-schule-ka.schule.bwl.de</span>
+        <span>📞 0721 133-4656</span>
+      </div>
+
+      <header>
+        <a href="index.html" class="logo" target="_blank">
+          <img
+            src="assets/logo.png"
+            alt="Ernst-Reuter-Schule Karlsruhe Logo"
+            class="logo-img"
+          />
+          <span>ERNSCHTLE · Adminbereich</span>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="index.html" target="_blank">Startseite</a></li>
+            <li><a href="ueber-uns.html" target="_blank">Über uns</a></li>
+            <li><a href="anmeldung.html" target="_blank">Anmeldung</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- MITTEILUNGEN -->
+        <section class="section" data-animate>
+          <div class="section-title">
+            <h2>Mitteilungen verwalten</h2>
+            <p>
+              Lege neue Mitteilungen an, die auf der Startseite im Bereich
+              „Aktuelles“ angezeigt werden. Die Daten werden nur lokal im
+              Browser (localStorage) gespeichert.
+            </p>
+          </div>
+
+          <form id="news-form" class="admin-form">
+            <label for="title">Titel</label>
+            <input
+              type="text"
+              id="title"
+              required
+              placeholder="z. B. Neue Sporthalle eröffnet"
+            />
+
+            <label for="date">Datum</label>
+            <input type="date" id="date" />
+
+            <small>
+              Wenn kein Datum gewählt wird, wird automatisch das heutige Datum
+              gespeichert.
+            </small>
+
+            <label for="content">Kurztext</label>
+            <textarea
+              id="content"
+              required
+              placeholder="Kurze Beschreibung der Mitteilung..."
+            ></textarea>
+
+            <label for="image">Bild hinzufügen (optional)</label>
+            <input
+              type="file"
+              id="image"
+              accept="image/*"
+            />
+            <small>
+              Das Bild wird lokal im Browser gespeichert und nur auf diesem
+              Gerät angezeigt. Bitte möglichst kleine Bilddateien verwenden.
+            </small>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 0.8rem;">
+              Mitteilung speichern
+            </button>
+
+            <div id="admin-status" class="admin-status"></div>
+          </form>
+        </section>
+
+        <!-- TERMINE -->
+        <section class="section" data-animate>
+          <div class="section-title">
+            <h2>Termine verwalten</h2>
+            <p>
+              Lege Termine an, die auf der Startseite im Bereich „Termine“
+              angezeigt werden.
+            </p>
+          </div>
+
+          <form id="term-form" class="admin-form">
+            <label for="term-title">Titel</label>
+            <input
+              type="text"
+              id="term-title"
+              required
+              placeholder="z. B. Informationsabend für neue 5er"
+            />
+
+            <label for="term-date">Datum</label>
+            <input type="date" id="term-date" required />
+
+            <label for="term-time">Uhrzeit (optional)</label>
+            <input type="time" id="term-time" />
+
+            <label for="term-place">Ort (optional)</label>
+            <input
+              type="text"
+              id="term-place"
+              placeholder="z. B. Aula, Sporthalle, Raum 105"
+            />
+
+            <label for="term-description">Beschreibung (optional)</label>
+            <textarea
+              id="term-description"
+              placeholder="Kurze Zusatzinfos zum Termin..."
+            ></textarea>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 0.8rem;">
+              Termin speichern
+            </button>
+
+            <div id="term-status" class="admin-status"></div>
+          </form>
+
+          <button
+            id="logout-btn"
+            class="btn btn-ghost"
+            style="margin-top: 1.5rem;"
+          >
+            Abmelden
+          </button>
+        </section>
+      </main>
+
+      <footer>
+        <span>© 2025 Ernst-Reuter-Schule Karlsruhe</span>
+        <span>
+          <a href="impressum.html" target="_blank">Impressum</a>
+          · Schülerprojekt-Website (kein offizieller Auftritt)
+        </span>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/news.js"></script>
+  </body>
+</html>
